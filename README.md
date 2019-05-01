@@ -13,7 +13,7 @@
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-**Changes/Additions**
+**Changes/Additions From Gatsby Starter**
  - added <a href="https://www.npmjs.com/package/@hackoregon/component-library/v/ci">@hackoregon/component-library@ci</a> (CIVIC magic)
  - added emotion and related plugins for styling
  - used prettier setting from [civic repo](https://github.com/hackoregon/civic)
@@ -25,25 +25,21 @@ Have issues? Open an issue! Improvements? Pull requests welcome!
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+0.  **Make sure you have yarn installed.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    You'll need [yarn](https://yarnpkg.com/). Make sure you have a recent version (currently at v1.15.2).
 
-    ```sh
-    # create a new Gatsby site using the default starter + ✨CIVIC magic✨
-    gatsby new my-default-starter https://github.com/jaronheard/civic-gatsby-starter
-    ```
+1.  **Clone and start developing.**
 
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+    Clone the repo, navigate into your new site’s directory and start it up.
 
     ```sh
-    cd my-default-starter/
-    gatsby develop
+    git clone https://github.com/hackoregon/civic-project-splash-page
+    cd civic-project-splash-page/
+    yarn gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+2.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
@@ -87,7 +83,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+10. **`yarn.lock`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
