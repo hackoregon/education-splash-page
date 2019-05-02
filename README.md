@@ -36,6 +36,7 @@ Have issues? Open an issue! Improvements? Pull requests welcome!
     ```sh
     git clone https://github.com/hackoregon/civic-project-splash-page
     cd civic-project-splash-page/
+    yarn install
     yarn gatsby develop
     ```
 
