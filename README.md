@@ -34,8 +34,8 @@ Have issues? Open an issue! Improvements? Pull requests welcome!
     Clone the repo, navigate into your new site’s directory and start it up.
 
     ```sh
-    git clone https://github.com/hackoregon/civic-project-splash-page
-    cd civic-project-splash-page/
+    git clone https://github.com/hackoregon/education-splash-page
+    cd education-splash-page/
     yarn install
     yarn gatsby develop
     ```
