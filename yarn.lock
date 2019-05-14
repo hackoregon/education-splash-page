@@ -921,10 +921,10 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@hackoregon/component-library@3.2.0-ci.11":
-  version "3.2.0-ci.11"
-  resolved "https://registry.yarnpkg.com/@hackoregon/component-library/-/component-library-3.2.0-ci.11.tgz#48d04d345d3f26978fe6004494dca2ab0d16d2c3"
-  integrity sha512-8FZmAB8jhHR1V+rEpsKueM9YloPOH+fBBaQIz5e6ygwNDgOsL2UzNE/n+2r1f0Ia6/2gRYO1EAwkv7k/aIFJcw==
+"@hackoregon/component-library@^3.2.0-ci.11":
+  version "3.2.0-ci.23"
+  resolved "https://registry.npmjs.org/@hackoregon/component-library/-/component-library-3.2.0-ci.23.tgz#781113b4609ee70ea91a9fc799b31ebc1d2b6235"
+  integrity sha512-98aErr+KN60ofb+u/67JwO03GjWa7+V3/J38X/YpPwNZni9b3tVcv0Ih8agDNlWGq8jOTJKg2FDuBf2+N2vEcA==
   dependencies:
     chai-enzyme "^1.0.0-beta.1"
     cheerio "^1.0.0-rc.2"
