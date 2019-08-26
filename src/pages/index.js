@@ -5,7 +5,8 @@ import {
   PageLayout,
   BarChart,
   CivicStoryCard,
-  Logo
+  Logo,
+  Nav
 } from "@hackoregon/component-library";
 
 import "@hackoregon/component-library/assets/global.styles.css";
@@ -102,10 +103,8 @@ const listText = css`
 `;
 
 const IndexPage = () => (
-  <PageLayout
-    heroTitle="Civic and Gatsby Starter"
-    heroSubtitle="They play nice!"
-  >
+  <div className={initialContentContainer}>
+    <Nav />
     {/* <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <p>
       No tweaks needed with{" "}
@@ -128,30 +127,23 @@ const IndexPage = () => (
     </div>
     <Link to="/page-2/">Go to page 2</Link> */}
 
-    <div className={initialContentContainer}>
-      <div className={logoWrapper}>
-        <Logo />
-      </div>
-      <p className={listText}>
-        Introduces...
-      </p>
-      <div className={titleStyle}>
-        Patterns and Pathways:
-      </div>
-      <div className={subtitleStyle}>
-        Visualizing Student Outcomes Across Education
-      </div>
-      <div className={listSubTitle}>Join us</div>
-      <div className={buttonContainerStatic}>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform">
-          <button
-            className={cx(buttonStyle, buttonDropShadow)}
-          >{`Sign Up`}</button>
-        </a>
-      </div>
+    <div className={logoWrapper}>
+      <Logo />
     </div>
-
-  </PageLayout>
+    <p className={listText}>Introduces...</p>
+    <div className={titleStyle}>Patterns and Pathways:</div>
+    <div className={subtitleStyle}>
+      Visualizing Student Outcomes Across Education
+    </div>
+    <div className={listSubTitle}>Join us</div>
+    <div className={buttonContainerStatic}>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform">
+        <button
+          className={cx(buttonStyle, buttonDropShadow)}
+        >{`Sign Up`}</button>
+      </a>
+    </div>
+  </div>
 );
 
 export default IndexPage;
