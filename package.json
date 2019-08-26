@@ -7,7 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
-    "@hackoregon/component-library": "3.2.0-ci.11",
+    "@hackoregon/component-library": "^4.0.1-ci.773",
     "gatsby": "^2.3.29",
     "gatsby-image": "^2.0.40",
     "gatsby-plugin-emotion": "^4.0.6",
@@ -20,7 +20,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-router": "3"
   },
   "devDependencies": {
     "prettier": "^1.17.0"
