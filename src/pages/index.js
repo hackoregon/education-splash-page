@@ -1,26 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
 import { cx, css } from "emotion";
 import {
-  PageLayout,
-  BarChart,
-  CivicStoryCard,
   Logo,
   Nav
 } from "@hackoregon/component-library";
 
 import "@hackoregon/component-library/assets/global.styles.css";
-
-import Image from "../components/image";
-import SEO from "../components/seo";
-
-const sampleSimpleData = [
-  { x: 5, y: 20 },
-  { x: 10, y: 30 },
-  { x: 15, y: 50 },
-  { x: 20, y: 40 },
-  { x: 25, y: 40 }
-];
 
 const logoWrapper = css`
   position: relative;
@@ -81,13 +66,6 @@ const buttonDropShadow = css`
   box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.2);
 `;
 
-const listTitle = css`
-  display: block;
-  font-family: "Rubik", sans-serif;
-  font-size: 35px;
-  margin: 40px 0;
-  text-align: center;
-`;
 const listSubTitle = css`
   display: block;
   font-family: "Rubik", sans-serif;
@@ -105,28 +83,6 @@ const listText = css`
 const IndexPage = () => (
   <div className={initialContentContainer}>
     <Nav />
-    {/* <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <p>
-      No tweaks needed with{" "}
-      <a href="https://www.npmjs.com/package/@hackoregon/component-library">
-        @hackoregon/component-library
-      </a>{" "}
-      version 3.0.0! You can even import the global styles and get all the
-      styling.
-    </p>
-    <p>Now go build something great.</p>
-    <CivicStoryCard title="Look at this story card!">
-      <BarChart
-        data={sampleSimpleData}
-        title="Look at this chart!"
-        subtitle="It doesn't mean anything, but it works!"
-      />
-    </CivicStoryCard>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> */}
-
     <div className={logoWrapper}>
       <Logo />
     </div>
