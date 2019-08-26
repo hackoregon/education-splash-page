@@ -2,18 +2,11 @@ import React from "react";
 import { cx, css } from "emotion";
 import {
   Logo,
-  Header,
-  CivicStoryCard,
   PullQuote
 } from "@hackoregon/component-library";
 
 import "@hackoregon/component-library/assets/global.styles.css";
-import BackgroundSection from "../components/background";
 import PageLayout from "../components/pagelayout";
-
-const headerShadow = css`
-  box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.2);
-`;
 
 const buttonContainerStatic = css`
   align-self: center;
@@ -51,12 +44,6 @@ const subtitleStyle = css`
 const linkStyle = css`
   color: #48a98a;
   font-weight: 500px;
-`;
-
-const initialContentContainer = css`
-  padding: 0px 6%;
-  margin: 40px auto 0px auto;
-  max-width: 900px;
 `;
 
 const buttonStyle = css`
@@ -171,13 +158,6 @@ const footerSection = css`
   margin-top: 180px;
   padding-bottom: 120px;
 `;
-
-const routes = [
-  { name: "The Collaborative", path: "/the-collaborative" },
-  { name: "Our Process", path: "/our-process" },
-  { name: "Demo Day 2019", path: "/demo-day-2019" },
-  { name: "Join Us", path: "/join-us" }
-];
 
 const IndexPage = () => (
   <PageLayout>
