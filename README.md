@@ -1,4 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d2267b19-3be4-4de0-9891-eb3437fd6a01/deploy-status)](https://app.netlify.com/sites/upbeat-jepsen-21e069/deploys)
+
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" height="60" />
@@ -90,9 +92,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
+
 ## 💫 Deployment
 
 Automatically deployed to Netlify.
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d2267b19-3be4-4de0-9891-eb3437fd6a01/deploy-status)](https://app.netlify.com/sites/upbeat-jepsen-21e069/deploys)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
