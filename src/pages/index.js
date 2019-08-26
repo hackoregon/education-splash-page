@@ -17,6 +17,10 @@ const logoWrapper = css`
   width: 160px;
 `;
 
+const headerShadow = css`
+  box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.2);
+`;
+
 const buttonContainerStatic = css`
   align-self: center;
   margin-top: 30px;
@@ -184,11 +188,13 @@ const routes = [
 const IndexPage = () => (
   <>
     <BackgroundSection>
-      <Header
-        title="Education Data Collaborative"
-        menu={routes}
-        mainProjectColor="#4D6764"
-      />
+      <div className={headerShadow}>
+        <Header
+          title="Education Data Collaborative"
+          menu={routes}
+          mainProjectColor="#4D6764"
+        />
+      </div>
       <div className={initialContentContainer}>
         <Logo type="civicStandard" />
         <aside className={listText}>Introduces...</aside>
@@ -240,7 +246,14 @@ const IndexPage = () => (
           </section>
         </div>
         <section className={footerSection}>
-          <div className={cx(buttonContainerStatic, css`margin-left: 0;`)}>
+          <div
+            className={cx(
+              buttonContainerStatic,
+              css`
+                margin-left: 0;
+              `
+            )}
+          >
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform">
               <button
                 className={cx(buttonStyle, buttonDropShadow)}
