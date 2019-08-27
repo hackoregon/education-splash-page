@@ -44,18 +44,16 @@ const routes = [
 ];
 
 const PageLayout = ({ children }) => (
-    <BackgroundSection>
-        <div className={headerShadow}>
-            <SimplestHeader
-            title="Education Data Collaborative"
-            menu={routes}
-            mainProjectColor="#4D6764"
-            />
-        </div>
-        <div className={cx(initialContentContainer, headerMargin)}>
-            {children}
-        </div>
-    </BackgroundSection>
-)
+  <BackgroundSection>
+    <div className={headerShadow}>
+      <SimplestHeader
+        title="Education Data Collaborative"
+        menu={routes}
+        mainProjectColor="#4D6764"
+      />
+    </div>
+    <div className={cx(initialContentContainer, headerMargin)}>{children}</div>
+  </BackgroundSection>
+);
 
 export default PageLayout;

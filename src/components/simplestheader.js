@@ -48,6 +48,7 @@ const headerMenu = css`
   li a {
     display: block;
     text-decoration: none;
+    color: #48a98a;
   }
   @media (max-width: ${maxWidth}) {
     li a {
@@ -69,10 +70,7 @@ const headerMenu = css`
   }
 `;
 
-const SimplestHeader = ({ menu, mainProjectColor }) => {
-  const headerColor = css`
-    background-color: ${mainProjectColor};
-  `;
+const SimplestHeader = ({ menu }) => {
   return (
     <header className={header}>
       <div className={logoWrapper}>
