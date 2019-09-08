@@ -159,6 +159,21 @@ const footerSection = css`
   padding-bottom: 120px;
 `;
 
+const embed = css`
+  position: relative;
+  padding-bottom: 80%; /* set the aspect ratio here as (height / width) * 100% */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+`;
+
 const IndexPage = () => (
   <PageLayout>
     <Logo type="civicStandard" />
@@ -207,6 +222,19 @@ const IndexPage = () => (
             challenges.
           </p>
           <p>That’s what the Education Data Collaborative is all about.</p>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section className={problemSolutionSection}>
+        <div className={problemSolution}>
+          <div className={embed}>
+            <iframe
+              src="//civicplatform.org/cards/is-there-evidence-the-program-worked/embed/visualization"
+              frameborder="0"
+              allowfullscreen
+            />
+          </div>
         </div>
       </section>
     </div>
