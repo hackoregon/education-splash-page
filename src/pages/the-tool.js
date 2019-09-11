@@ -188,63 +188,87 @@ const embed = css`
   }
 `;
 
-const IndexPage = () => (
+const mobileCentered = css`
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+`
+
+const TheTool = () => (
   <PageLayout>
     <Logo type="civicStandard" />
     <aside className={listText}>Introduces...</aside>
     <section>
-      <h1 className={titleStyle}>The Education Data Collaborative</h1>
-      <div className={quoteStyle}>
-        <PullQuote
-          quoteText="We believe in the power of data, value of collaboration, and the
-            potential of people. We think we can do better for today’s students.
-            That’s why we’re launching a new venture — the Education Data
-            Collaborative."
-        />
-      </div>
-      <div className={cx(
-        buttonContainerStatic,
-        css`
-        @media (max-width: 640px) {
-          text-align: center; 
-          margin-left: 0;
-        }
-        `
-      )}>
-        {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform"> */}
-        <Link to="/join-us">
-          <button
-            className={cx(buttonStyle, buttonDropShadow)}
-            >{`Join Us`}</button>
-        </Link>
-      </div>
+      <h1 className={titleStyle}>Better Data For Better Outcomes</h1>
+      <h2 className={mobileCentered}>A real use case, imaginary data</h2>
     </section>
     <div>
       <section className={problemSolutionSection}>
         <div className={problemSolution}>
-          <h2>The Problem</h2>
-          <p>We all want better educational opportunities for kids.</p>
-          <p>
-            Knowing where to begin requires good data about what’s working,
-            what’s not, and why. That data can be hard to find, and even harder
-            to understand.
-          </p>
+          <h2>Meet Jordan</h2>
+          <p>An education researcher with 15 years experience working with schools and education programs all over the country, Jordan is helping a nonprofit organization that piloted a program to help newcomers (immigrants) understand and navigate their public schools. The program wants to know if it’s working – whether the kids and families who participate benefit.</p>
         </div>
       </section>
     </div>
     <div>
       <section className={problemSolutionSection}>
         <div className={problemSolution}>
-          <h2>The Solution</h2>
-          <h3 className={subtitleStyle}>Data. Technology. People.</h3>
-          <p>
-            Our team of data scientists, software engineers, and user experience
-            designers partner with domain experts to build open source,
-            scaleable, interactive tools for educators and their allies, so we
-            can work together on solutions to our most important community
-            challenges.
-          </p>
-          <p>That’s what the Education Data Collaborative is all about.</p>
+          <h2>Is there evidence the program worked?</h2>
+          <div className={embed}>
+            <iframe
+              src="//civicplatform.org/cards/is-there-evidence-the-program-worked/embed/visualization"
+              frameborder="0"
+              allowfullscreen
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section className={problemSolutionSection}>
+        <div className={problemSolution}>
+          <h2>What surprised you about your program outcomes?</h2>
+          <div className={quoteStyle}>
+            <PullQuote
+              quoteText="In our Theory of Change, we designed for 5th graders. It turned our, our intervention is best for 1st-3rd graders at only 3-5 hours/week."
+            />
+          </div>
+          <p>- Jordan in a report to funders</p>
+          <div className={embed}>
+            <iframe
+              src="//civicplatform.org/cards/what-surprised-you-about-program-outcomes/embed/visualization"
+              frameborder="0"
+              allowfullscreen
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section className={problemSolutionSection}>
+        <div className={problemSolution}>
+          <h2>What was the impact of the context that navigation happens in?</h2>
+          <div className={embed}>
+            <iframe
+              src="//civicplatform.org/cards/what-else-surprised-you-about-program-outcomes/embed/visualization"
+              frameborder="0"
+              allowfullscreen
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section className={problemSolutionSection}>
+        <div className={problemSolution}>
+          <h2>Do programs like this matter at a policy level?</h2>
+          <div className={embed}>
+            <iframe
+              src="//civicplatform.org/cards/do-programs-like-this-matter-at-policy-level/embed/visualization"
+              frameborder="0"
+              allowfullscreen
+            />
+          </div>
         </div>
       </section>
     </div>
@@ -274,4 +298,5 @@ const IndexPage = () => (
   </PageLayout>
 );
 
-export default IndexPage;
+export default TheTool;
+
