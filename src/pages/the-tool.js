@@ -227,7 +227,7 @@ const TheTool = () => (
     <div>
       <section className={problemSolutionSection}>
         <div className={problemSolution}>
-          <h2>What surprised you about your program outcomes?</h2>
+          <h2>Did the program have the intended effect?</h2>
           <div className={quoteStyle}>
             <PullQuote
               quoteText="In our Theory of Change, we designed for 5th graders. It turned our, our intervention is best for 1st-3rd graders at only 3-5 hours/week."
