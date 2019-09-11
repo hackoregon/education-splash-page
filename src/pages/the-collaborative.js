@@ -188,13 +188,19 @@ const embed = css`
   }
 `;
 
+const mobileCentered = css`
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+`
+
 const TheCollaborative = () => (
   <PageLayout>
     <Logo type="civicStandard" />
     <aside className={listText}>Introduces...</aside>
     <section>
-      <h1 className={titleStyle}>The Education Data Collaborative:</h1>
-      <h2>A new kind of partnership.</h2>
+      <h1 className={titleStyle}>The Education Data Collaborative</h1>
+      <h2 className={mobileCentered}>A new kind of partnership</h2>
     </section>
     <div>
       <section className={problemSolutionSection}>
@@ -251,7 +257,27 @@ const TheCollaborative = () => (
       </section>
     </div>
     <section className={footerSection}>
-      <h2 className={listSubTitle}>WANT TO CHANGE THE WORLD THROUGH DATA? JOIN US.</h2>
+      <div
+        className={cx(
+          buttonContainerStatic,
+          css`
+            margin-left: 0;
+          `
+        )}
+      >
+        <Link to="/join-us">
+          <button
+            className={cx(buttonStyle, buttonDropShadow)}
+          >{`Sign Up`}</button>
+        </Link>
+      </div>
+      <h2 className={listSubTitle}>Questions or comments?</h2>
+      <a
+        className={cx(subtitleStyle, linkStyle)}
+        href={`mailto:hello@civicsoftwarefoundation.org`}
+      >
+        hello@civicsoftwarefoundation.org
+      </a>
     </section>
   </PageLayout>
 );

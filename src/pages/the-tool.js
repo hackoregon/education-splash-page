@@ -188,16 +188,32 @@ const embed = css`
   }
 `;
 
+const mobileCentered = css`
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+`
+
 const TheTool = () => (
   <PageLayout>
     <Logo type="civicStandard" />
     <aside className={listText}>Introduces...</aside>
     <section>
       <h1 className={titleStyle}>Better Data For Better Outcomes</h1>
+      <h2 className={mobileCentered}>An imaginary use case</h2>
     </section>
     <div>
       <section className={problemSolutionSection}>
         <div className={problemSolution}>
+          <h2>Meet Jordan</h2>
+          <p>An education researcher with 15 years experience working with schools and education programs all over the country, Jordan is helping a nonprofit organization that piloted a program to help newcomers (immigrants) understand and navigate their public schools. The program wants to know if it’s working – whether the kids and families who participate benefit.</p>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section className={problemSolutionSection}>
+        <div className={problemSolution}>
+          <h2>Is there evidence the program worked?</h2>
           <div className={embed}>
             <iframe
               src="//civicplatform.org/cards/is-there-evidence-the-program-worked/embed/visualization"
@@ -211,6 +227,13 @@ const TheTool = () => (
     <div>
       <section className={problemSolutionSection}>
         <div className={problemSolution}>
+          <h2>What surprised you about your program outcomes?</h2>
+          <div className={quoteStyle}>
+            <PullQuote
+              quoteText="In our Theory of Change, we designed for 5th graders. It turned our, our intervention is best for 1st-3rd graders at only 3-5 hours/week."
+            />
+          </div>
+          <p>- Jordan in a report to funders</p>
           <div className={embed}>
             <iframe
               src="//civicplatform.org/cards/what-surprised-you-about-program-outcomes/embed/visualization"
@@ -224,6 +247,7 @@ const TheTool = () => (
     <div>
       <section className={problemSolutionSection}>
         <div className={problemSolution}>
+          <h2>What was the impact of the context that navigation happens in?</h2>
           <div className={embed}>
             <iframe
               src="//civicplatform.org/cards/what-else-surprised-you-about-program-outcomes/embed/visualization"
@@ -237,6 +261,7 @@ const TheTool = () => (
     <div>
       <section className={problemSolutionSection}>
         <div className={problemSolution}>
+          <h2>Do programs like this matter at a policy level?</h2>
           <div className={embed}>
             <iframe
               src="//civicplatform.org/cards/do-programs-like-this-matter-at-policy-level/embed/visualization"

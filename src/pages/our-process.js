@@ -189,13 +189,19 @@ const embed = css`
   }
 `;
 
+const mobileCentered = css`
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+`
+
 const OurProcess = () => (
   <PageLayout>
     <Logo type="civicStandard" />
     <aside className={listText}>Introduces...</aside>
     <section>
       <h1 className={titleStyle}>Working Backwards from Better Educational Outcomes</h1>
-      <h2>A THEORY OF CHANGE</h2>
+      <h2 className={mobileCentered}>A theory of change</h2>
     </section>
     <div>
       <section className={problemSolutionSection}>
@@ -205,6 +211,29 @@ const OurProcess = () => (
         </div>
       </section>
     </div>
+    <section className={footerSection}>
+      <div
+        className={cx(
+          buttonContainerStatic,
+          css`
+            margin-left: 0;
+          `
+        )}
+      >
+        <Link to="/join-us">
+          <button
+            className={cx(buttonStyle, buttonDropShadow)}
+          >{`Sign Up`}</button>
+        </Link>
+      </div>
+      <h2 className={listSubTitle}>Questions or comments?</h2>
+      <a
+        className={cx(subtitleStyle, linkStyle)}
+        href={`mailto:hello@civicsoftwarefoundation.org`}
+      >
+        hello@civicsoftwarefoundation.org
+      </a>
+    </section>
   </PageLayout>
 );
 
