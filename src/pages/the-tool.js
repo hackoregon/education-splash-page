@@ -200,7 +200,7 @@ const TheTool = () => (
     <aside className={listText}>Introduces...</aside>
     <section>
       <h1 className={titleStyle}>Better Data For Better Outcomes</h1>
-      <h2 className={mobileCentered}>An imaginary use case</h2>
+      <h2 className={mobileCentered}>A real use case, imaginary data</h2>
     </section>
     <div>
       <section className={problemSolutionSection}>
