@@ -39,7 +39,7 @@ const initialContentContainer = css`
 const routes = [
   { name: "The Collaborative", path: "/the-collaborative" },
   { name: "Our Process", path: "/our-process" },
-  { name: "Demo Day 2019", path: "/demo-day-2019" },
+  { name: "The Tool", path: "/the-tool" },
   { name: "Join Us", path: "/join-us" }
 ];
 

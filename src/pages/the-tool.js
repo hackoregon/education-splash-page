@@ -7,7 +7,6 @@ import {
 
 import "@hackoregon/component-library/assets/global.styles.css";
 import PageLayout from "../components/pagelayout";
-import Image from "../components/image";
 
 const buttonContainerStatic = css`
   align-self: center;
@@ -188,23 +187,103 @@ const embed = css`
   }
 `;
 
-const OurProcess = () => (
+const TheTool = () => (
   <PageLayout>
     <Logo type="civicStandard" />
     <aside className={listText}>Introduces...</aside>
     <section>
-      <h1 className={titleStyle}>Working Backwards from Better Educational Outcomes</h1>
-      <h2>A THEORY OF CHANGE</h2>
+      <h1 className={titleStyle}>The Education Data Collaborative</h1>
+      <div className={quoteStyle}>
+        <PullQuote
+          quoteText="We believe in the power of data, value of collaboration, and the
+            potential of people. We think we can do better for today’s students.
+            That’s why we’re launching a new venture — the Education Data
+            Collaborative."
+        />
+      </div>
+      <div className={cx(
+        buttonContainerStatic,
+        css`
+        @media (max-width: 640px) {
+          text-align: center; 
+          margin-left: 0;
+        }
+        `
+      )}>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform">
+          <button
+            className={cx(buttonStyle, buttonDropShadow)}
+          >{`Join Us`}</button>
+        </a>
+      </div>
     </section>
     <div>
       <section className={problemSolutionSection}>
         <div className={problemSolution}>
-          <Image fileName="theory-of-change.png"></Image>
-          <p>Working with our education subject matter expert, our team of data scientists, engineers and user experience designers used a Theory of Change template to help us focus and clarify our team’s strategy. Creating this Theory of Change helped us realize the need for an Education Data Collaborative to guide the design of tools, ensure high-value data use, and provide a forum for educators and allies to work together on using data to achieve shared goals. </p>
+          <h2>The Problem</h2>
+          <p>We all want better educational opportunities for kids.</p>
+          <p>
+            Knowing where to begin requires good data about what’s working,
+            what’s not, and why. That data can be hard to find, and even harder
+            to understand.
+          </p>
         </div>
       </section>
     </div>
+    <div>
+      <section className={problemSolutionSection}>
+        <div className={problemSolution}>
+          <h2>The Solution</h2>
+          <h3 className={subtitleStyle}>Data. Technology. People.</h3>
+          <p>
+            Our team of data scientists, software engineers, and user experience
+            designers partner with domain experts to build open source,
+            scaleable, interactive tools for educators and their allies, so we
+            can work together on solutions to our most important community
+            challenges.
+          </p>
+          <p>That’s what the Education Data Collaborative is all about.</p>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section className={problemSolutionSection}>
+        <div className={problemSolution}>
+          <div className={embed}>
+            <iframe
+              src="//civicplatform.org/cards/is-there-evidence-the-program-worked/embed/visualization"
+              frameborder="0"
+              allowfullscreen
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <section className={footerSection}>
+      <div
+        className={cx(
+          buttonContainerStatic,
+          css`
+            margin-left: 0;
+          `
+        )}
+      >
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform">
+          <button
+            className={cx(buttonStyle, buttonDropShadow)}
+          >{`Sign Up`}</button>
+        </a>
+      </div>
+      <h2 className={listSubTitle}>Questions or comments?</h2>
+      <a
+        className={cx(subtitleStyle, linkStyle)}
+        href={`mailto:hello@civicsoftwarefoundation.org`}
+      >
+        hello@civicsoftwarefoundation.org
+      </a>
+    </section>
   </PageLayout>
 );
 
-export default OurProcess;
+export default TheTool;
+

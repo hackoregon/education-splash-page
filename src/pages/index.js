@@ -26,7 +26,8 @@ const titleStyle = css`
   color: 4d6764;
   text-transform: uppercase;
   @media (max-width: 640px) {
-    font-size: 36px;
+    font-size: 28px;
+    text-align: center;
   }
 `;
 
@@ -73,6 +74,9 @@ const quoteStyle = css`
   div {
     margin: 0px;
     text-align: left;
+    @media (max-width: 640px) {
+      text-align: center;
+    }
     max-width: 900px;
   }
   blockquote {
@@ -82,6 +86,9 @@ const quoteStyle = css`
     align-self: left;
     background-color: #d3e9e7;
     display: inline;
+    @media (max-width: 640px) {
+      font-size: 18px;
+    }
   }
 `;
 
@@ -118,10 +125,16 @@ const problemSolution = css`
   margin: 0 auto;
   p {
     font-size: 22px;
+    @media (max-width: 640px) {
+      font-size: 18px;
+    }
   }
   h2 {
     font-size: 36px;
     font-size: 2.625rem;
+    @media (max-width: 640px) {
+      font-size: 26px;
+    }
   }
   :after {
     background-color: #4d6764;
@@ -188,7 +201,15 @@ const IndexPage = () => (
             Collaborative."
         />
       </div>
-      <div className={buttonContainerStatic}>
+      <div className={cx(
+        buttonContainerStatic,
+        css`
+        @media (max-width: 640px) {
+          text-align: center; 
+          margin-left: 0;
+        }
+        `
+      )}>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform">
           <button
             className={cx(buttonStyle, buttonDropShadow)}
