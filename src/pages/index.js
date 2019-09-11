@@ -1,5 +1,6 @@
 import React from "react";
 import { cx, css } from "emotion";
+import { Link } from "gatsby";
 import {
   Logo,
   PullQuote
@@ -210,11 +211,12 @@ const IndexPage = () => (
         }
         `
       )}>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform">
+        {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform"> */}
+        <Link to="/join-us">
           <button
             className={cx(buttonStyle, buttonDropShadow)}
-          >{`Join Us`}</button>
-        </a>
+            >{`Join Us`}</button>
+        </Link>
       </div>
     </section>
     <div>
@@ -246,19 +248,6 @@ const IndexPage = () => (
         </div>
       </section>
     </div>
-    <div>
-      <section className={problemSolutionSection}>
-        <div className={problemSolution}>
-          <div className={embed}>
-            <iframe
-              src="//civicplatform.org/cards/is-there-evidence-the-program-worked/embed/visualization"
-              frameborder="0"
-              allowfullscreen
-            />
-          </div>
-        </div>
-      </section>
-    </div>
     <section className={footerSection}>
       <div
         className={cx(
@@ -268,11 +257,11 @@ const IndexPage = () => (
           `
         )}
       >
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform">
+        <Link to="/join-us">
           <button
             className={cx(buttonStyle, buttonDropShadow)}
           >{`Sign Up`}</button>
-        </a>
+        </Link>
       </div>
       <h2 className={listSubTitle}>Questions or comments?</h2>
       <a

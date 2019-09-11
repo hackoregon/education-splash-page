@@ -1,5 +1,6 @@
 import React from "react";
 import { cx, css } from "emotion";
+import { Link } from "gatsby";
 import {
   Logo,
   PullQuote
@@ -192,57 +193,18 @@ const TheTool = () => (
     <Logo type="civicStandard" />
     <aside className={listText}>Introduces...</aside>
     <section>
-      <h1 className={titleStyle}>The Education Data Collaborative</h1>
-      <div className={quoteStyle}>
-        <PullQuote
-          quoteText="We believe in the power of data, value of collaboration, and the
-            potential of people. We think we can do better for today’s students.
-            That’s why we’re launching a new venture — the Education Data
-            Collaborative."
-        />
-      </div>
-      <div className={cx(
-        buttonContainerStatic,
-        css`
-        @media (max-width: 640px) {
-          text-align: center; 
-          margin-left: 0;
-        }
-        `
-      )}>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform">
-          <button
-            className={cx(buttonStyle, buttonDropShadow)}
-          >{`Join Us`}</button>
-        </a>
-      </div>
+      <h1 className={titleStyle}>Better Data For Better Outcomes</h1>
     </section>
     <div>
       <section className={problemSolutionSection}>
         <div className={problemSolution}>
-          <h2>The Problem</h2>
-          <p>We all want better educational opportunities for kids.</p>
-          <p>
-            Knowing where to begin requires good data about what’s working,
-            what’s not, and why. That data can be hard to find, and even harder
-            to understand.
-          </p>
-        </div>
-      </section>
-    </div>
-    <div>
-      <section className={problemSolutionSection}>
-        <div className={problemSolution}>
-          <h2>The Solution</h2>
-          <h3 className={subtitleStyle}>Data. Technology. People.</h3>
-          <p>
-            Our team of data scientists, software engineers, and user experience
-            designers partner with domain experts to build open source,
-            scaleable, interactive tools for educators and their allies, so we
-            can work together on solutions to our most important community
-            challenges.
-          </p>
-          <p>That’s what the Education Data Collaborative is all about.</p>
+          <div className={embed}>
+            <iframe
+              src="//civicplatform.org/cards/is-there-evidence-the-program-worked/embed/visualization"
+              frameborder="0"
+              allowfullscreen
+            />
+          </div>
         </div>
       </section>
     </div>
@@ -251,7 +213,33 @@ const TheTool = () => (
         <div className={problemSolution}>
           <div className={embed}>
             <iframe
-              src="//civicplatform.org/cards/is-there-evidence-the-program-worked/embed/visualization"
+              src="//civicplatform.org/cards/what-surprised-you-about-program-outcomes/embed/visualization"
+              frameborder="0"
+              allowfullscreen
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section className={problemSolutionSection}>
+        <div className={problemSolution}>
+          <div className={embed}>
+            <iframe
+              src="//civicplatform.org/cards/what-else-surprised-you-about-program-outcomes/embed/visualization"
+              frameborder="0"
+              allowfullscreen
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section className={problemSolutionSection}>
+        <div className={problemSolution}>
+          <div className={embed}>
+            <iframe
+              src="//civicplatform.org/cards/do-programs-like-this-matter-at-policy-level/embed/visualization"
               frameborder="0"
               allowfullscreen
             />
@@ -268,11 +256,11 @@ const TheTool = () => (
           `
         )}
       >
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoFKzZyxCAXR7o66nPIoHHcPkIKj7GJDf3j7josZEXq5h3NQ/viewform">
+        <Link to="/join-us">
           <button
             className={cx(buttonStyle, buttonDropShadow)}
           >{`Sign Up`}</button>
-        </a>
+        </Link>
       </div>
       <h2 className={listSubTitle}>Questions or comments?</h2>
       <a

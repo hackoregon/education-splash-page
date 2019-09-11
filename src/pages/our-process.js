@@ -1,5 +1,6 @@
 import React from "react";
 import { cx, css } from "emotion";
+import { Link } from "gatsby";
 import {
   Logo,
   PullQuote
